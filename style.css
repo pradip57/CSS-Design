@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: grid;
+    place-items: center;
+}
+
+div{
+    font-size: 40px;
+    color: aliceblue;
+}
+
+h2{
+    
+    /* width: 500px ;
+    height: 90px; */
+    text-align: center;
+    /* background-color: aliceblue; */
+    position: relative;
+}
+h2::before{
+    content: "PRADIP SAPKOTA";
+    border-right: 5px solid red;
+    animation: mover 1s linear infinite alternate;
+    position: absolute;
+    left: 0%;
+    top: 0%; 
+    color: red;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0%;
+    /* background-color: aqua; */
+    
+}
+
+@keyframes mover{
+    
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
+
+}
